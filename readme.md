@@ -1,3 +1,1 @@
-The repo for the website calebanth.com.
-
-Tools Used:
+My personal website.
