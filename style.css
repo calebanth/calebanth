@@ -15,6 +15,10 @@ body, html {
   font-size: 20px;
 }
 
+h1 {
+  margin: 0;
+}
+
 a {
   color: #3E4A48;
   text-decoration: none;
@@ -34,9 +38,8 @@ ul {
 }
 
 #projects {
-  overflow: auto;
-  height: 100%;
-  background-color: rgba(62, 100, 128, 0.7);
+  height: 80%;
+  background-color: rgba(62, 100, 128, 0.8);
   text-align: center;
   color: #D3DEDC;
 }
@@ -46,8 +49,8 @@ ul {
 }
 
 .header {
-  margin-top: 3%;
-  margin-bottom: 3%;
+  text-align: center;
+  font-size: 80px;
   text-align: center;
 }
 
@@ -55,7 +58,7 @@ ul {
   border-radius: 25px;
   position: relative;
   margin-bottom: 5%;
-  width: 40%;
+  width: 50%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
@@ -72,7 +75,6 @@ ul {
   background-color: rgba(0,0,0,.2);
   border-radius: 25px;
   transition: all 0.5s;
-
 }
 
 .project:hover {
@@ -82,11 +84,13 @@ ul {
 
 .project h2 {
   display: inline-block;
+  width: 80%;
 }
 
 .right {
   float: right;
   padding-top: 20px;
+  width: 18%;
 }
 
 .primary-color {
@@ -118,21 +122,50 @@ footer li {
   width: 100px;
 }
 
-#home h1 {
-  font-size: 100px;
-}
-
 #home p {
   margin-right: auto;
   margin-left: auto;
   max-width: 700px;
-  font-size: 24px;
 }
 
-#projects h1 {
-  font-size: 80px;
-  text-align: center;
-  margin: 0;
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #home p {
+    font-size: 14px;
+  }
+  #home img {
+    width: 100%;
+  }
+  .devicon {
+    font-size: 20px;
+  }
+  #projects .devicon {
+    font-size: 35px;
+  }
+  #projects {
+    height: auto;
+  }
+  .homepage {
+    padding: 5%;
+  }
+  .header {
+    font-size: 22px;
+  }
+  .project {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+  footer {
+    position: relative;
+    right: 0;
+    border-radius: 0;
+    text-align: center;
+  }
 }
 
 /* ParticlesJS */
@@ -147,5 +180,6 @@ canvas {
   width: 100%;
   height: 100%;
   background-image: url('assets/bg.png');
+  background-repeat: no-repeat;
   z-index: -1;
 }
