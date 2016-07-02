@@ -38,7 +38,6 @@ ul {
 }
 
 #projects {
-  height: 80%;
   background-color: rgba(62, 100, 128, 0.8);
   text-align: center;
   color: #D3DEDC;
@@ -65,7 +64,7 @@ ul {
 
 .project {
   display: inline-block;
-  width: 22%;
+  width: 43%;
   padding-left: 25px;
   padding-right: 25px;
   margin: 1%;
